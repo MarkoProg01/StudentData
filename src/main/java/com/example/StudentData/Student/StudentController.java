@@ -14,7 +14,7 @@ public class StudentController {
     private final StudentService studentService;
     @Autowired
     public StudentController(StudentService studentService) { //Kada se doda @Component u StudentService,skloni se error
-        this.studentService = new StudentService();
+        this.studentService = studentService;
     }
 
     @GetMapping
